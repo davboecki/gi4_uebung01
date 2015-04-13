@@ -2,9 +2,9 @@ CC = gcc
 
 .PHONY: all default clean
 
-default: myecho
+default: myecho myenv
 
-all: myecho
+all: myecho myenv
 
 myecho: myecho.c
 
@@ -12,3 +12,4 @@ myenv: myenv.c
 
 clean:
 	rm -f myecho
+	rm -f myenv
