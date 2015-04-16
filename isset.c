@@ -3,11 +3,11 @@
 
 int main(int argc, char* argv[], char* envp[]) {
 	if(argc < 2) {
-		printf("ERROR: Too few arguments");
+		printf("ERROR: Too few arguments\n");
 		return -1;
 	}
 	if(argc > 3) {
-		printf("ERROR: Too many arguments");
+		printf("ERROR: Too many arguments\n");
 		return -1;
 	}
 	char* name = NULL;
@@ -18,7 +18,7 @@ int main(int argc, char* argv[], char* envp[]) {
 		} else if(strcmp(argv[2], "-v")) {
 			name = argv[1];
 		} else {
-			printf("ERROR: Wrong arguments");
+			printf("ERROR: Wrong arguments\n");
 			return -1;
 		}
 		showResult = 1;
